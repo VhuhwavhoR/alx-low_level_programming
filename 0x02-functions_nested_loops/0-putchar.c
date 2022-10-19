@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * main - print putchar
+ * is written by bwave
  * Return: 0
  */
 
