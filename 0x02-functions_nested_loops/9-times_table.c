@@ -3,43 +3,28 @@
  * times_table - prints the times table up to 9
  * Return: void
  */
-
 void times_table(void)
 {
-	int a, b, c, d, e;
+	int num, mult, prod;
 
-	for (a = 0; a < 10; a++)
+	for (num = 0, num <= 9, num++)
 	{
-		for (b = 0; b < 10; b++)
+		_putchar('0');
 
+		for (mult = 1; mult <= 9; mult++)
 		{
-			c = a * b;
-			d = c / 10;
-			e = c % 10
-			if (b == 0)
-				_putchar('0');
+			_putchar(',');
+			_putchar(' ');
 
-			else if (c < 10)
-			{
+			prod = num * mult;
+
+			if (prod <= 9)
 				_putchar(' ');
-				_putchar('0' + e);
-			}
 			else
-			{
-				_putchar('0' + d);
-				_putchar('0' + e);
-			}
-			if (b < 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-			else
-			{
-				_putchar('\n');
-			}
+				_putchar((prod / 10) + '0');
+
+			_putchar((prod % 10) + '0');
 		}
+	_putchar('\n');
 	}
 }
-
-
